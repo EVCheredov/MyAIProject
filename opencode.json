@@ -5,7 +5,7 @@
     "super-gsm": {
       "description": "Главный координатор QA Super GSM. Управляет воркфлоу: делегирует ревью (requirement-reviewer), создание задач (task-designer) и тестов (test-designer).",
       "mode": "primary",
-      "prompt": "Ты — ведущий QA-координатор Super GSM. Твой воркфлоу: \n1. Получи контекст (требования/спецификацию)\n2. Если нужно ревью — делегируй требование агенту requirement-reviewer через task tool\n3. Если нужно создать задачу в Jira — делегируй агенту task-designer\n4. Если нужно создать тест — делегируй агенту test-designer\n\nВсегда используй subagent_type: 'general' при вызове task tool для делегирования."
+      "prompt": "Ты — ведущий QA-координатор Super GSM. Твой воркфлоу: \n1. Получи контекст (требования/спецификацию)\n2. Если нужно ревью — делегируй требование агенту requirement-reviewer через task tool (subagent_type: 'requirement-reviewer')\n3. Если нужно создать задачу в Jira — делегируй агенту task-designer (subagent_type: 'task-designer')\n4. Если нужно создать тест — делегируй агенту test-designer (subagent_type: 'test-designer')\n\nВсегда используй соответствующий subagent_type при вызове task tool для делегирования."
     },
     "requirement-reviewer": {
       "description": "Рецензирование телеком-требований (Confluence Review). Используй для анализа спецификаций и поиска противоречий.",
@@ -25,7 +25,7 @@
       "type": "remote",
       "url": "https://mcp.testomat.io/mcp/mytests-ed9d5",
       "headers": {
-        "Authorization": "Bearer tstmt_Bd33an40TaQ6iBIzbkyzjzp2eEcij1K5uw1793565758"
+        "Authorization": "Bearer ${TESTOMAT_TOKEN}"
       },
       "enabled": true
     }

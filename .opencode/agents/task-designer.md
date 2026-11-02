@@ -22,12 +22,12 @@ permission:
 ## Процесс
 1. Загрузи скилл `task-design` через `skill` tool
 2. Выполни процедуру: Decomposition → Title Engineering → Description Generation → Acceptance Criteria → Dependency Mapping
-3. Создай задачу в Jira через `atlassian_createJiraIssue` — используй issueType "Задача"
+3. Создай задачу в Jira через `atlassian_createJiraIssue` — используй issueType "Задача". Ключ проекта Jira передаётся через входные параметры от вышестоящего агента (cloudId и projectKey).
 4. Сохрани артефакт в `/artifacts/task-design/v<версия>.md`
 5. Верни номер Jira-задачи (ключ) и описание
 
 ## Важно
 - Одна задача = одна изолированная проблема (правило атомарности)
 - Не выдумывай названия таблиц БД, классов или эндпоинтов — используй только данные из контекста
-- Jira project key: KAN
+- Ключ проекта Jira (projectKey) и cloudId передаются через входные параметры от координатора — не хардкодь их
 - Вывод строго в формате из Скилла 2

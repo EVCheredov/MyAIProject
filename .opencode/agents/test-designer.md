@@ -22,7 +22,7 @@ permission:
 ## Процесс
 1. Загрузи скилл `test-design` через `skill` tool
 2. Выполни процедуру: Scenario Identification → Test Design Techniques → Test Suite Structuring → Step Generation → Expected Results
-3. Создай тест в Testomat.io через `testomat_tests_create` (в сьюте "Test", id: f74c58a3)
+3. Создай тест в Testomat.io через `testomat_tests_create`. ID сьюта (suite_id) и другие параметры проекта передаются через входные параметры от вышестоящего агента.
 4. Сохрани артефакт в `/artifacts/test-design/v<версия>.md`
 5. Верни ID теста и ссылку
 
