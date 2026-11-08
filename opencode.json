@@ -25,9 +25,16 @@
       "type": "remote",
       "url": "https://mcp.testomat.io/mcp/mytests-ed9d5",
       "headers": {
-        "Authorization": "Bearer ${TESTOMAT_TOKEN}"
+        "Authorization": "Bearer {file:.secrets/testomat_token}"
       },
       "enabled": true
+    },
+    "atlassian": {
+      "type": "remote",
+      "url": "https://mcp.atlassian.com/v2/mcp",
+      "enabled": true,
+      "timeout": 30000,
+      "oauth": {}
     }
   }
 }
