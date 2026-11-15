@@ -1,0 +1,212 @@
+[
+  {
+    "title": "TC-EVC-001-01 Успешный вход по MSISDN+пароль (Happy Path)",
+    "id": "9f1e8eee",
+    "url": "https://app.testomat.io/projects/mytests-ed9d5/test/9f1e8eee",
+    "status": "success"
+  },
+  {
+    "title": "TC-EVC-001-02 Неверный пароль -> 401 AUTH_INVALID_CREDENTIALS",
+    "id": "6dee4e42",
+    "url": "https://app.testomat.io/projects/mytests-ed9d5/test/6dee4e42",
+    "status": "success"
+  },
+  {
+    "title": "TC-EVC-001-03 Несуществующий логин -> 401 идентичное тело",
+    "id": "f7901b22",
+    "url": "https://app.testomat.io/projects/mytests-ed9d5/test/f7901b22",
+    "status": "success"
+  },
+  {
+    "title": "TC-EVC-001-04 Неразличимость неверный логин vs неверный пароль",
+    "id": "3065d029",
+    "url": "https://app.testomat.io/projects/mytests-ed9d5/test/3065d029",
+    "status": "success"
+  },
+  {
+    "title": "TC-EVC-001-05 Длина пароля 7 символов -> отказ",
+    "id": "acf0e5ad",
+    "url": "https://app.testomat.io/projects/mytests-ed9d5/test/acf0e5ad",
+    "status": "success"
+  },
+  {
+    "title": "TC-EVC-001-06 Длина пароля 8 символов -> успех",
+    "id": "d36af006",
+    "url": "https://app.testomat.io/projects/mytests-ed9d5/test/d36af006",
+    "status": "success"
+  },
+  {
+    "title": "TC-EVC-001-07 Длина пароля 64 символа -> успех",
+    "id": "2d1fc34d",
+    "url": "https://app.testomat.io/projects/mytests-ed9d5/test/2d1fc34d",
+    "status": "success"
+  },
+  {
+    "title": "TC-EVC-001-08 Длина пароля 65 символов -> отказ",
+    "id": "b505165f",
+    "url": "https://app.testomat.io/projects/mytests-ed9d5/test/b505165f",
+    "status": "success"
+  },
+  {
+    "title": "TC-EVC-001-09 Отсутствие обязательного класса символов -> отказ",
+    "id": "c3ba541e",
+    "url": "https://app.testomat.io/projects/mytests-ed9d5/test/c3ba541e",
+    "status": "success"
+  },
+  {
+    "title": "TC-EVC-001-10 Спецсимволы разрешены, но не обязательны",
+    "id": "f7d9af28",
+    "url": "https://app.testomat.io/projects/mytests-ed9d5/test/f7d9af28",
+    "status": "success"
+  },
+  {
+    "title": "TC-EVC-001-11 Хранение пароля как хеша Argon2id с солью",
+    "id": "3d45c5ea",
+    "url": "https://app.testomat.io/projects/mytests-ed9d5/test/3d45c5ea",
+    "status": "success"
+  },
+  {
+    "title": "TC-EVC-001-12 Пароль не выводится в логи/трассировки/ответы API",
+    "id": "76c661a2",
+    "url": "https://app.testomat.io/projects/mytests-ed9d5/test/76c661a2",
+    "status": "success"
+  },
+  {
+    "title": "TC-EVC-001-13 Блокировка после 3 неудач; SIM и баланс без изменений",
+    "id": "ea163392",
+    "url": "https://app.testomat.io/projects/mytests-ed9d5/test/ea163392",
+    "status": "success"
+  },
+  {
+    "title": "TC-EVC-001-14 Блокировка после 3-й, а не после 2-й попытки",
+    "id": "208eb1d6",
+    "url": "https://app.testomat.io/projects/mytests-ed9d5/test/208eb1d6",
+    "status": "success"
+  },
+  {
+    "title": "TC-EVC-001-15 В блокировке верный пароль -> 423 ACCOUNT_BLOCKED",
+    "id": "a67e62cf",
+    "url": "https://app.testomat.io/projects/mytests-ed9d5/test/a67e62cf",
+    "status": "success"
+  },
+  {
+    "title": "TC-EVC-001-16 Авто-разблокировка через 30 мин + обнуление счётчика",
+    "id": "89dc4e10",
+    "url": "https://app.testomat.io/projects/mytests-ed9d5/test/89dc4e10",
+    "status": "success"
+  },
+  {
+    "title": "TC-EVC-001-17 Ручная досрочная разблокировка админом + аудит",
+    "id": "b31f27dc",
+    "url": "https://app.testomat.io/projects/mytests-ed9d5/test/b31f27dc",
+    "status": "success"
+  },
+  {
+    "title": "TC-EVC-001-18 BR-01 сброс счётчика после успешного входа",
+    "id": "e2985008",
+    "url": "https://app.testomat.io/projects/mytests-ed9d5/test/e2985008",
+    "status": "success"
+  },
+  {
+    "title": "TC-EVC-001-19 TTL 30 мин от последней активности; продление операцией",
+    "id": "1d6a515d",
+    "url": "https://app.testomat.io/projects/mytests-ed9d5/test/1d6a515d",
+    "status": "success"
+  },
+  {
+    "title": "TC-EVC-001-20 Истечение TTL -> 401 SESSION_EXPIRED",
+    "id": "2f78b296",
+    "url": "https://app.testomat.io/projects/mytests-ed9d5/test/2f78b296",
+    "status": "success"
+  },
+  {
+    "title": "TC-EVC-001-21 Смена пароля инвалидирует все сессии, включая текущую",
+    "id": "41f5aa90",
+    "url": "https://app.testomat.io/projects/mytests-ed9d5/test/41f5aa90",
+    "status": "success"
+  },
+  {
+    "title": "TC-EVC-001-22 Logout завершает только текущую сессию",
+    "id": "e9942eac",
+    "url": "https://app.testomat.io/projects/mytests-ed9d5/test/e9942eac",
+    "status": "success"
+  },
+  {
+    "title": "TC-EVC-001-23 Успешное восстановление пароля по SMS (+ баланс/статус)",
+    "id": "83115ac7",
+    "url": "https://app.testomat.io/projects/mytests-ed9d5/test/83115ac7",
+    "status": "success"
+  },
+  {
+    "title": "TC-EVC-001-24 SMS-код на привязанный MSISDN; действителен 5 минут",
+    "id": "b90bce80",
+    "url": "https://app.testomat.io/projects/mytests-ed9d5/test/b90bce80",
+    "status": "success"
+  },
+  {
+    "title": "TC-EVC-001-25 3 попытки ввода кода; затем аннулирование",
+    "id": "1ea9aff2",
+    "url": "https://app.testomat.io/projects/mytests-ed9d5/test/1ea9aff2",
+    "status": "success"
+  },
+  {
+    "title": "TC-EVC-001-26 Новый пароль при восстановлении валидируется по FR-02",
+    "id": "083a3937",
+    "url": "https://app.testomat.io/projects/mytests-ed9d5/test/083a3937",
+    "status": "success"
+  },
+  {
+    "title": "TC-EVC-001-27 Недоступность Auth Service -> 503 AUTH_SERVICE_UNAVAILABLE",
+    "id": "493dca14",
+    "url": "https://app.testomat.io/projects/mytests-ed9d5/test/493dca14",
+    "status": "success"
+  },
+  {
+    "title": "TC-EVC-001-28 Таймаут обращения к Auth Service = 5 секунд",
+    "id": "3aa9f5b5",
+    "url": "https://app.testomat.io/projects/mytests-ed9d5/test/3aa9f5b5",
+    "status": "success"
+  },
+  {
+    "title": "TC-EVC-001-29 Недоставка SMS -> 502 SMS_DELIVERY_FAILED",
+    "id": "b9f4bec5",
+    "url": "https://app.testomat.io/projects/mytests-ed9d5/test/b9f4bec5",
+    "status": "success"
+  },
+  {
+    "title": "TC-EVC-001-30 Повторный запрос SMS-кода не ранее 60 секунд",
+    "id": "1392c714",
+    "url": "https://app.testomat.io/projects/mytests-ed9d5/test/1392c714",
+    "status": "success"
+  },
+  {
+    "title": "TC-EVC-001-31 BR-03 успешный вход фиксируется в аудите",
+    "id": "9e518781",
+    "url": "https://app.testomat.io/projects/mytests-ed9d5/test/9e518781",
+    "status": "success"
+  },
+  {
+    "title": "TC-EVC-001-32 BR-03 отказ в аутентификации фиксируется в аудите",
+    "id": "adfc549a",
+    "url": "https://app.testomat.io/projects/mytests-ed9d5/test/adfc549a",
+    "status": "success"
+  },
+  {
+    "title": "TC-EVC-001-33 BR-03 блокировка фиксируется в аудите",
+    "id": "873d5b8c",
+    "url": "https://app.testomat.io/projects/mytests-ed9d5/test/873d5b8c",
+    "status": "success"
+  },
+  {
+    "title": "TC-EVC-001-34 BR-03 разблокировка (авто и ручная) фиксируется в аудите",
+    "id": "543273bd",
+    "url": "https://app.testomat.io/projects/mytests-ed9d5/test/543273bd",
+    "status": "success"
+  },
+  {
+    "title": "TC-EVC-001-35 BR-04 пароль и SMS-код не попадают в аудит и логи",
+    "id": "d36a2b00",
+    "url": "https://app.testomat.io/projects/mytests-ed9d5/test/d36a2b00",
+    "status": "success"
+  }
+]
